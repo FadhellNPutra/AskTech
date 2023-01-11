@@ -18,3 +18,15 @@ Route::get('/', [HomeController::class, "home"]);
 Route::get('/register', [AuthController::class, "daftar"]);
 
 Route::post('/welcome', [AuthController::class, "kirim"]);
+
+// Route::get('/master', function(){
+//     return view('page.layout.master');
+// });
+
+Route::get('/table', function(){
+    return view('page.table');
+});
+
+Route::get('/data-tables', function(){
+    return view('page.data-tables');
+});
